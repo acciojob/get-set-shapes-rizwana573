@@ -23,9 +23,13 @@ class Rectangle {
 }
 
 class Square extends Rectangle {
-	getPerimeter(){
-		console.log(4*this.width);
-	}
+	constructor(sideLength) {
+        super(sideLength, sideLength);
+    }
+
+    getPerimeter() {
+        return 4 * this.width;
+    }
 }
 
 // Do not change the code below this line
